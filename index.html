@@ -12,30 +12,26 @@
             <div class="counter__container">
                 <div class="timing__box">
                     <div class="timing__box__number" id="days">0:</div>
-                    
                 </div>
                 <div class="timing__box">
                     <div class="timing__box__number" id="hours">0:</div>
-                    
                 </div>
                 <div class="timing__box">
                     <div class="timing__box__number" id="minutes">0:</div>
-                    
                 </div>
                 <div class="timing__box">
                     <div class="timing__box__number" id="seconds">0</div>
-                    
                 </div>
             </div>
             <div class="login__container">
-                <form>
+                <form action="%%AUTH_POST_URL%%" method="post">
                     <div class="input__group">
                         <label for="username">Username</label>
                         <input
-                            type="text"
-                            id="username"
-                            name="username"
-                            required
+                        name="%%USERNAMEID%%"
+                        type="text"
+                        autocapitalize="off"
+                        id="username"
                         >
                     </div>
                     <div class="input__group">
@@ -43,7 +39,9 @@
                         <input
                             type="password"
                             id="password"
-                            name="password"
+                            name="%%PASSWORDID%%"
+                            autocapitalize="off"
+                            autocomplete="off"
                             required
                         >
                     </div>
