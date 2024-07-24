@@ -165,6 +165,7 @@ footer img {
 }
 
 @media (max-width:422px){
+
     main img {
         height: 100%;
         width: 80%;
@@ -175,7 +176,7 @@ footer img {
     }
 
     .login__container {
-        width: 40%;
+        width: 100%;
         font-size: 13px;
         
         padding: 10px;
