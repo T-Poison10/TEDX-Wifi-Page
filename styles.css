@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     background: url('jali.svg') no-repeat right center fixed;
-    background-size: 65%;
+    background-size: 100vh;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -122,4 +122,67 @@ button:hover {
 footer img {
     max-width: 100%;
     height: auto;
+}
+
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .timing__box__number {
+        font-size: 4em;
+    }
+
+    .login__container {
+        width: 350px;
+    }
+    button{
+        width: 310px;
+    }
+}
+
+/* Small screens */
+@media (min-width:423px)and (max-width:767px) {
+    main img {
+        height: 100%;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .timing__box__number {
+        font-size: 2rem;
+    }
+
+    .login__container {
+        width: 40%;
+        font-size: 13px;
+        
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width:422px){
+    main img {
+        height: 100%;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .timing__box__number {
+        font-size: 1.5rem;
+    }
+
+    .login__container {
+        width: 40%;
+        font-size: 13px;
+        
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
 }
