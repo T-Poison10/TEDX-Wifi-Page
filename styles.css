@@ -1,0 +1,125 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('jali.svg') no-repeat right center fixed;
+    background-size: 65%;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+    z-index: 1;
+}
+
+main img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 460px;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.counter__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px; 
+}
+
+
+.timing__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px; 
+}
+
+.timing__box__number {
+    font-size: 5.5em;
+    font-weight: bold;
+    color: black;
+    margin: 0 5px;
+}
+
+
+.login__container {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.login__container h2 {
+    margin-bottom: 20px;
+    border-style: solid;
+}
+
+.input__group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+}
+
+.input__group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+.input__group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    z-index: -1;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+}

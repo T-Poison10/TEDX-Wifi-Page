@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Countdown Timer</title>
+    </head>
+    <body>
+        <main>
+            <img src="tedx-logo.svg" alt="Main Image">
+            <div class="counter__container">
+                <div class="timing__box">
+                    <div class="timing__box__number" id="days">0:</div>
+                    
+                </div>
+                <div class="timing__box">
+                    <div class="timing__box__number" id="hours">0:</div>
+                    
+                </div>
+                <div class="timing__box">
+                    <div class="timing__box__number" id="minutes">0:</div>
+                    
+                </div>
+                <div class="timing__box">
+                    <div class="timing__box__number" id="seconds">0</div>
+                    
+                </div>
+            </div>
+            <div class="login__container">
+                <form>
+                    <div class="input__group">
+                        <label for="username">Username</label>
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            required
+                        >
+                    </div>
+                    <div class="input__group">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            required
+                        >
+                    </div>
+                    <div>
+                        <button class="button" type="submit">
+                            Login
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <img src="footerblack.svg" alt="Footer Image " class="footer">
+            <img src="footerred.svg" alt="Footer Image" class="footer">
+        </footer>
+        <script>
+        // Set the date we're counting down to
+        const eventDate = new Date();
+        eventDate.setDate(eventDate.getDate() + 50);
+
+        // Update the count down every 1 second
+        const countdownFunction = setInterval(() => {
+            // Get today's date and time
+            const now = new Date().getTime();
+
+            // Find the distance between now and the event date
+            const distance = eventDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the elements with corresponding ids
+            document.getElementById("days").innerText = days+ " :";
+            document.getElementById("hours").innerText = hours+ " :";
+            document.getElementById("minutes").innerText = minutes+ " :";
+            document.getElementById("seconds").innerText = seconds;
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("days").innerText = "0";
+                document.getElementById("hours").innerText = "0";
+                document.getElementById("minutes").innerText = "0";
+                document.getElementById("seconds").innerText = "0";
+            }
+        }, 1000);
+        </script>
+    </body>
+</html>
