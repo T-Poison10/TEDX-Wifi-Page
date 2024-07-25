@@ -9,7 +9,7 @@
     <body>
         <main>
             <img src="tedx-logo.svg" alt="Main Image">
-            <div class="counter__container">
+            <div class="counter__container" id="mainBox">
                 <div class="timing__box">
                     <div class="timing__box__number" id="days">0:</div>
                 </div>
@@ -28,10 +28,10 @@
                     <div class="input__group">
                         <label for="username">Username</label>
                         <input
-                        name="%%USERNAMEID%%"
-                        type="text"
-                        autocapitalize="off"
-                        id="username"
+                            name="%%USERNAMEID%%"
+                            type="text"
+                            autocapitalize="off"
+                            id="username"
                         >
                     </div>
                     <div class="input__group">
@@ -85,10 +85,7 @@
             // If the count down is over, write some text
             if (distance < 0) {
                 clearInterval(countdownFunction);
-                document.getElementById("days").innerText = "0";
-                document.getElementById("hours").innerText = "0";
-                document.getElementById("minutes").innerText = "0";
-                document.getElementById("seconds").innerText = "0";
+                document.getElementById("mainBox").innerText = "Event Started";
             }
         }, 1000);
         </script>
