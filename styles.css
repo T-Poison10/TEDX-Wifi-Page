@@ -70,7 +70,7 @@ button:hover {
 }
 
 .timing__box__number {
-    font-size: 5.5em;
+    
     font-weight: bold;
     color: black;
     margin: 0 5px;
@@ -123,6 +123,10 @@ footer img {
     max-width: 100%;
     height: auto;
 }
+#mainBox{
+    font-size: 5.5em;
+    color: red;
+}
 
 
 /* Medium screens */
@@ -131,9 +135,9 @@ footer img {
         height: auto;
 
     }
-    .timing__box__number {
-        font-size: 4em;
-    }
+    /* .timing__box__number {
+        
+    } */
 
     .login__container {
         width: 350px;
@@ -141,6 +145,10 @@ footer img {
     button{
         width: 310px;
     }
+    #mainBox{
+        font-size: 4em;
+    }
+
 }
 
 /* Small screens */
@@ -149,9 +157,7 @@ footer img {
         max-width: 300px;
 
     }
-    .timing__box__number {
-        font-size: 2rem;
-    }
+
 
     .login__container {
         width: 70%;
@@ -164,6 +170,10 @@ footer img {
         width: 100%;
         padding: 15px;
     }
+    #mainBox{
+        font-size: 2em;
+    }
+
 }
 
 @media (max-width:422px){
@@ -173,9 +183,7 @@ footer img {
         font-size: 200px;
         margin-bottom: 20px;
     }
-    .timing__box__number {
-        font-size: 1.2rem;
-    }
+
 
     .login__container {
         width: 90%;
@@ -188,4 +196,8 @@ footer img {
         width: 100%;
         padding: 15px;
     }
+    #mainBox{
+        font-size: 1.5em;
+    }
+
 }
